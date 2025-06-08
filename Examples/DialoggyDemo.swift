@@ -3,8 +3,8 @@ import SwiftUI
 @main
 struct DialoggyDemoApp: App {
     
-    private lazy var dialogStyleConfig: DialogStyleConfig = {
-        var config = DialogStyleConfig(
+    private let dialogStyle: DialogStyleConfig = {
+        DialogStyleConfig(
             primaryButtonStyle: DialogButtonStyle(
                 backgroundColor: .blue,
                 foregroundColor: .white,
@@ -27,7 +27,6 @@ struct DialoggyDemoApp: App {
             messageForegroundColor: .secondary,
             imageSize: CGSize(width: 64, height: 64)
         )
-        return config
     }()
     
     var body: some Scene {
