@@ -13,7 +13,7 @@
 ---
 
 ## 📺 Preview
-![Dialoggy in action](Assets/dialog-preview.gif)
+![Dialoggy in action](dialoggy-preview.gif)
 
 ## 🚀 Installation
 
