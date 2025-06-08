@@ -16,7 +16,7 @@ public struct DialogModel: Identifiable, Equatable {
     let actions: [DialogAction]
     
     public init(
-        resource: ImageResource? = nil,
+        resource: ImageResource?,
         title: LocalizedStringKey,
         message: LocalizedStringKey? = nil,
         actions: [DialogAction]
@@ -28,7 +28,7 @@ public struct DialogModel: Identifiable, Equatable {
         self.actions = actions
     }
     
-    public init(image: Image? = nil, title: LocalizedStringKey, message: LocalizedStringKey? = nil, actions: [DialogAction]) {
+    public init(image: Image?, title: LocalizedStringKey, message: LocalizedStringKey? = nil, actions: [DialogAction]) {
         self.id = UUID().uuidString
         self.image = image
         self.title = title
