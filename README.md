@@ -1,5 +1,5 @@
 # 📦 Dialoggy
-![Swift](https://img.shields.io/badge/Swift-5.9-orange) ![iOS](https://img.shields.io/badge/iOS-16%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green)
+![Swift](https://img.shields.io/badge/Swift-5.9-orange) ![iOS](https://img.shields.io/badge/iOS-17%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 **Dialoggy** is a lightweight and flexible SwiftUI library for displaying custom dialogs in iOS apps.
 
 ## ✨ Features
