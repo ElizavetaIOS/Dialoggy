@@ -1,5 +1,5 @@
 # 📦 Dialoggy
-
+![Swift](https://img.shields.io/badge/Swift-5.9-orange) ![iOS](https://img.shields.io/badge/iOS-17%2B-blue) ![License](https://img.shields.io/badge/license-MIT-green)
 **Dialoggy** is a lightweight and flexible SwiftUI library for displaying custom dialogs in iOS apps.
 
 ## ✨ Features
@@ -8,7 +8,7 @@
 - Easy to integrate via `.dialogable()` modifier  
 - Supports multiple actions  
 - Optional icon/image support  
-- iOS 16+ compatibility  
+- iOS 17+ compatibility  
 
 ---
 
@@ -19,7 +19,7 @@
 Add Dialoggy to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/yourname/Dialoggy.git", from: "1.0.0")
+.package(url: "https://github.com/yourname/Dialoggy.git", from: "1.0.1")
 ```
 
 Or via Xcode:  
