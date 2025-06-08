@@ -8,7 +8,7 @@
 - Easy to integrate via `.dialogable()` modifier  
 - Supports multiple actions  
 - Optional icon/image support  
-- iOS 16+ compatibility  
+- iOS 17+ compatibility  
 
 ---
 
