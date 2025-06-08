@@ -25,7 +25,7 @@
 Add Dialoggy to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/yourname/Dialoggy.git", from: "1.0.3")
+.package(url: "https://github.com/yourname/Dialoggy.git", from: "1.0.4")
 ```
 
 Or via Xcode:  
