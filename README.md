@@ -13,7 +13,7 @@
 ---
 
 ## 📺 Preview
-![Dialoggy in action](dialoggy-preview.gif)
+<img src="dialoggy-preview.gif" width="400" alt="Dialoggy in action" />
 
 ## 🚀 Installation
 
