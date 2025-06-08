@@ -22,6 +22,10 @@ struct DialogButton: View {
                 .frame(maxWidth: .infinity)
                 .background(style.backgroundColor)
                 .cornerRadius(style.cornerRadius)
+                .overlay{
+                    RoundedRectangle(cornerRadius: style.cornerRadius)
+                        .stroke(style.borderColor)
+                }
         }
     }
 }

@@ -13,44 +13,50 @@ struct DialogView: View {
     @Environment(\.dialogStyle) private var style
 
     var body: some View {
-        VStack(spacing: 16) {
-            dialog.image?
-                .resizable()
-                .scaledToFit()
-                .frame(width: style.imageSize.width, height: style.imageSize.height)
-
-            Text(dialog.title)
-                .font(style.messageFont)
-                .foregroundStyle(style.messageForegroundColor)
-                .multilineTextAlignment(.center)
-            
-            if let message = dialog.message {
-                Text(message)
-                    .font(style.messageFont)
-                    .foregroundStyle(style.messageForegroundColor)
+        VStack(spacing: 12) {
+            if let image = dialog.image {
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: style.imageSize.width, height: style.imageSize.height)
+            }
+     
+            VStack(spacing: 8) {
+                Text(dialog.title)
+                    .font(style.titleFont)
+                    .foregroundStyle(style.titleForegroundColor)
                     .multilineTextAlignment(.center)
+                
+                if let message = dialog.message {
+                    Text(message)
+                        .font(style.messageFont)
+                        .foregroundStyle(style.messageForegroundColor)
+                        .multilineTextAlignment(.center)
+                }
+                
             }
             
-            ForEach(dialog.actions) { action in
-                DialogButton(
-                    title: action.title,
-                    style: action.style == .primary ? style.primaryButtonStyle : style.secondaryButtonStyle
-                ) {
-                    dismiss()
-                    action.completion?()
+            VStack(spacing: 18) {
+                ForEach(dialog.actions) { action in
+                    DialogButton(
+                        title: action.title,
+                        style: action.style == .primary ? style.primaryButtonStyle : style.secondaryButtonStyle
+                    ) {
+                        dismiss()
+                        action.completion?()
+                    }
                 }
             }
+            .padding(.top, 16)
         }
-        .padding()
+        .padding(.horizontal, 20)
+        .padding(.vertical, 16)
         .background(Color.white)
-        .cornerRadius(20)
-        .shadow(radius: 10)
-        .padding(.horizontal, 40)
+        .cornerRadius(24)
     }
     
     @ViewBuilder
     private func button(for action: DialogAction) -> some View {
-        //let style = style.buttonStyleProvider.style(for: action.style)
         Button(action: {
             dismiss()
             action.completion?()

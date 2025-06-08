@@ -10,6 +10,7 @@ import SwiftUI
 public struct DialogButtonStyle {
 
     let backgroundColor: Color
+    let borderColor: Color
     let foregroundColor: Color
     let cornerRadius: CGFloat
     let font: Font
@@ -19,6 +20,7 @@ public struct DialogButtonStyle {
     public init(
         backgroundColor: Color,
         foregroundColor: Color,
+        borderColor: Color = .clear,
         cornerRadius: CGFloat,
         font: Font,
         horizontalPadding: CGFloat,
@@ -26,6 +28,7 @@ public struct DialogButtonStyle {
     ) {
         self.backgroundColor = backgroundColor
         self.foregroundColor = foregroundColor
+        self.borderColor = borderColor
         self.cornerRadius = cornerRadius
         self.font = font
         self.horizontalPadding = horizontalPadding

@@ -12,6 +12,9 @@
 
 ---
 
+## 📺 Preview
+![Dialoggy in action](Assets/dialog-preview.gif)
+
 ## 🚀 Installation
 
 **Swift Package Manager**
@@ -19,7 +22,7 @@
 Add Dialoggy to your `Package.swift`:
 
 ```swift
-.package(url: "https://github.com/yourname/Dialoggy.git", from: "1.0.1")
+.package(url: "https://github.com/yourname/Dialoggy.git", from: "1.0.3")
 ```
 
 Or via Xcode:  
